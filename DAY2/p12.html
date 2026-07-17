@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- Registration Form -->
+    <h2>To hire fill the form</h2>
+    <form action="submit" method="post">
+       <br ><label for="Name" >Name:</label>
+        <input type="text" id="Name" name="Name">
+        <br><label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email">
+        <br><label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br><label for="radio">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><label for="Select ">Select job:</label>
+        <select id="Select" name="job">
+            <option value="web_developer">Web Developer</option>
+            <option value="graphic_designer">Graphic Designer</option>
+            <option value="content_writer">Content Writer</option>
+        </select>
+        <br><label for="checkbox">Select skills required to you:</label>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+        <br><label for="textarea">Any specifications?</label>
+        <textarea id="textarea" name="specifications"></textarea>
+        <br><label for="file">Upload your written requirements</label>
+        <input type="file" id="file" name="requirements">
+        <br><label for="date">Date:</label>
+        <br><input type="date" id="date" name="date">
+        <input type="submit" value="Submit">
+</body>
+</html>
