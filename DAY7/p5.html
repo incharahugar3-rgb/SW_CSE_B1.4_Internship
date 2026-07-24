@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: flex-item</title>
+    <style>
+       .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: burlywood;
+        padding: 10px 20px;
+        color: crimson;
+       }
+       .nav-links{
+            display: flex;
+            gap: 16px;
+            list-style: none;
+       }
+       .nav-links a{
+        color: chocolate;
+        text-decoration: none;
+       }
+       .nav-links a:hover{
+        /* text-decoration: underline; */
+        color: black;
+        background-color: chartreuse;
+       }
+
+       /* Flex items example */
+       .demo-section{
+        padding: 20px;
+       }
+       .flex-demo-container{
+        display: flex;
+        border: 2px solid black;
+        padding: 10px;
+        gap: 10px;
+
+       }
+       .item{
+        background-color: bisque;
+        padding: 15px;
+        text-align: center;
+        min-width: 80px;
+       }
+       .sidebar{
+        flex: 0 0 150px; /* fixed width, no grow, no shrink */
+        background-color: cadetblue;
+       }
+       .main{
+        flex: 1 1 0; /* grow to fill remaining space */
+        background-color: aquamarine;
+       }
+    </style>
+</head>
+<body>
+    <p>
+        flex-item properties:
+        flex-grow [0: don't grow | 1: grow equally with other items that also have 1 | 2: grow twice as much as items with 1]
+        flex-shrink
+        flex-basis
+        flex shorthand [flex-grow, flex-shrink, flex-basis]
+        align-self
+        order
+
+        Flexbox patterns:
+        1. Center a both horizontally & vertically
+        2. Simple navigation bar
+        3. Responsive card layout
+        4. Two-column layout (sidebar + main)
+    </p>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="demo-section">
+        <h2>1. flex-grow</h2>
+        <div class="flex-demo-container">
+            <div class="item sidebar">sidebar(fixed)</div>
+            <div class="item main"></div>
+        </div>
+
+    </section>
+</body>
+</html>
